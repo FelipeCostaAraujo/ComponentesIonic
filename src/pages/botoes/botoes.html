@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Botões</ion-title>
   </ion-navbar>
 
@@ -8,5 +13,69 @@
 
 
 <ion-content padding>
+  <h2> Botão padrao</h2>
+<button ion-button>Botão padrao</button>
+<button ion-button color="secundary">Secondary</button>
+<button ion-button color="danger">danger</button>
+<button ion-button color="dark">dark</button>
+
+
+<h2>Botão outline</h2>
+<button ion-button outline>Primary</button>
+<button ion-button outline color="secundary">Secundary</button>
+<button ion-button outline color="danger">Danger</button>
+<button ion-button outline color="dark">Dark</button>
+
+<h2>Botão clear</h2>
+<button ion-button clear>Primary</button>
+<button ion-button clear color="secundary">Secundary</button>
+<button ion-button clear color="danger">Danger</button>
+<button ion-button clear color="dark">Dark</button>
+
+<h2>Botão round</h2>
+<button ion-button round>Primary</button>
+<button ion-button round color="secundary">Secundary</button>
+<button ion-button round color="danger">Danger</button>
+<button ion-button round color="dark">Dark</button>
+
+<h2>Botão Block</h2>
+<button ion-button block>Primary</button>
+<button ion-button block color="secundary">Secundary</button>
+<button ion-button block color="danger">Danger</button>
+<button ion-button block color="dark">Dark</button>
+
+<h2>Botão Full</h2>
+<button ion-button full>Primary</button>
+<button ion-button full color="secundary">Secundary</button>
+<button ion-button full color="danger">Danger</button>
+<button ion-button full color="dark">Dark</button>
+
+<h2>Botão small e large</h2>
+<button ion-button large>Large Primary</button>
+<button ion-button small color="secundary">Small Secundary</button>
+<button ion-button small color="danger">Small Danger</button>
+<button ion-button large color="dark">LargeDark</button>
+<h2>Botão com icone</h2>
+<button ion-button icon-left>
+  <ion-icon name="home"></ion-icon>
+  Icone a esquerda
+</button>
+<button ion-button icon-right>
+    Icone a direita
+    <ion-icon name="home"></ion-icon>
+  </button>
+
+  <button ion-button icon-only>
+      <ion-icon name="home"></ion-icon>
+    </button>
+
+<ion-list>
+  <ion-item>
+    Left Icon button <Button ion-button outline item-end icon>
+      <ion-icon name="star"></ion-icon>
+      Botão ao lado
+    </Button>
+  </ion-item>
+</ion-list>
 
 </ion-content>
