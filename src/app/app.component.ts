@@ -1,3 +1,5 @@
+import { BotoesPage } from './../pages/botoes/botoes';
+import { BadgesPage } from './../pages/badges/badges';
 import { AlertControlPage } from './../pages/alert-control/alert-control';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { Component, ViewChild } from '@angular/core';
@@ -26,7 +28,9 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'ActionSheet' , component: ActionSheetPage},
-      { title: 'AlerController' ,component:AlertControlPage }
+      { title: 'AlerController' ,component:AlertControlPage },
+      { title: 'Badges', component:BadgesPage },
+      { title: 'Botoes', component: BotoesPage }
     ];
 
   }
