@@ -1,3 +1,4 @@
+import { AlertControlPage } from './../pages/alert-control/alert-control';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    ActionSheetPage
+    ActionSheetPage,
+    AlertControlPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    ActionSheetPage
+    ActionSheetPage,
+    AlertControlPage
   ],
   providers: [
     StatusBar,

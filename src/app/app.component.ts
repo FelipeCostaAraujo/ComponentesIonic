@@ -1,3 +1,4 @@
+import { AlertControlPage } from './../pages/alert-control/alert-control';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -24,7 +25,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'ActionSheet' , component: ActionSheetPage}
+      { title: 'ActionSheet' , component: ActionSheetPage},
+      { title: 'AlerController' ,component:AlertControlPage }
     ];
 
   }
