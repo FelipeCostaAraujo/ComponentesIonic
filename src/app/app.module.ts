@@ -1,3 +1,9 @@
+import { ListaPage } from './../pages/lista/lista';
+import { InputPage } from './../pages/input/input';
+import { IconsPage } from './../pages/icons/icons';
+import { GridPage } from './../pages/grid/grid';
+import { FabPage } from './../pages/fab/fab';
+import { DatatimePage } from './../pages/datatime/datatime';
 import { RangerPage } from './../pages/ranger/ranger';
 import { RadioPage } from './../pages/radio/radio';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
@@ -7,7 +13,7 @@ import { BadgesPage } from './../pages/badges/badges';
 import { AlertControlPage } from './../pages/alert-control/alert-control';
 import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, Input } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
@@ -31,7 +37,13 @@ import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigati
     CheckboxPage,
     CustomNavigationPage,
     RadioPage,
-    RangerPage
+    RangerPage,
+    DatatimePage,
+    FabPage,
+    GridPage,
+    IconsPage,
+    InputPage,
+    ListaPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +65,13 @@ import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigati
     CheckboxPage,
     CustomNavigationPage,
     RadioPage,
-    RangerPage
+    RangerPage,
+    DatatimePage,
+    FabPage,
+    GridPage,
+    IconsPage,
+    InputPage,
+    ListaPage
   ],
   providers: [
     StatusBar,

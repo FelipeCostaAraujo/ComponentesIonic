@@ -1,3 +1,8 @@
+import { ListaPage } from './../pages/lista/lista';
+import { IconsPage } from './../pages/icons/icons';
+import { GridPage } from './../pages/grid/grid';
+import { FabPage } from './../pages/fab/fab';
+import { DatatimePage } from './../pages/datatime/datatime';
 import { RangerPage } from './../pages/ranger/ranger';
 import { RadioPage } from './../pages/radio/radio';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
@@ -13,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { InputPage } from '../pages/input/input';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +44,13 @@ export class MyApp {
       { title: 'Cards' , component: CardPage },
       { title: 'CheckBox', component: CheckboxPage},
       { title: 'Radio', component: RadioPage},
-      { title: 'Ranger', component: RangerPage }
+      { title: 'Ranger', component: RangerPage },
+      { title: 'DataTime' , component: DatatimePage },
+      { title: 'Fab' ,component:FabPage },
+      { title: 'Grid' , component:GridPage },
+      { title: 'Icons' , component: IconsPage },
+      { title: 'Inputs' ,component: InputPage },
+      { title: 'List' , component:ListaPage }
     ];
 
   }
