@@ -15,11 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListaPage {
 
+  itens:string[] = [
+   'laranja','maça','abacate','manga','pera','uva','limao'
+  ];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListaPage');
+  }
+
+  selecionarItem(item){
+ console.log(item);
   }
 
 }

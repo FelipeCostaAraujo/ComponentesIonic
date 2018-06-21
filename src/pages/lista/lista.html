@@ -8,5 +8,18 @@
 
 
 <ion-content padding>
+ <ion-list>
+   <ion-item>Item Simples</ion-item>
+ </ion-list>
+
+ <ion-list no-lines>
+    <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">{{item}}</ion-item>
+  </ion-list>
+
+  <br>
+  <ion-list>
+      <ion-item *ngFor="let item of itens">{{item}}</ion-item>
+    </ion-list>
+
 
 </ion-content>
