@@ -1,3 +1,7 @@
+import { RangerPage } from './../pages/ranger/ranger';
+import { RadioPage } from './../pages/radio/radio';
+import { CheckboxPage } from './../pages/checkbox/checkbox';
+import { CardPage } from './../pages/card/card';
 import { BotoesPage } from './../pages/botoes/botoes';
 import { BadgesPage } from './../pages/badges/badges';
 import { AlertControlPage } from './../pages/alert-control/alert-control';
@@ -12,6 +16,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigation';
 
 @NgModule({
   declarations: [
@@ -21,11 +26,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertControlPage,
     BadgesPage,
-    BotoesPage
+    BotoesPage,
+    CardPage,
+    CheckboxPage,
+    CustomNavigationPage,
+    RadioPage,
+    RangerPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'Voltar',
+      mode: 'ios',
+    }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +48,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertControlPage,
     BadgesPage,
-    BotoesPage
+    BotoesPage,
+    CardPage,
+    CheckboxPage,
+    CustomNavigationPage,
+    RadioPage,
+    RangerPage
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,7 @@
+import { RangerPage } from './../pages/ranger/ranger';
+import { RadioPage } from './../pages/radio/radio';
+import { CheckboxPage } from './../pages/checkbox/checkbox';
+import { CardPage } from './../pages/card/card';
 import { BotoesPage } from './../pages/botoes/botoes';
 import { BadgesPage } from './../pages/badges/badges';
 import { AlertControlPage } from './../pages/alert-control/alert-control';
@@ -30,7 +34,11 @@ export class MyApp {
       { title: 'ActionSheet' , component: ActionSheetPage},
       { title: 'AlerController' ,component:AlertControlPage },
       { title: 'Badges', component:BadgesPage },
-      { title: 'Botoes', component: BotoesPage }
+      { title: 'Botoes', component: BotoesPage },
+      { title: 'Cards' , component: CardPage },
+      { title: 'CheckBox', component: CheckboxPage},
+      { title: 'Radio', component: RadioPage},
+      { title: 'Ranger', component: RangerPage }
     ];
 
   }
@@ -47,6 +55,6 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 }
