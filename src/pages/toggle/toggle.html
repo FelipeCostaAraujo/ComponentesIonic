@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Toggle</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  ativo:{{ativo}}
+<ion-list>
+  <ion-item>
+    <ion-label>Ativo</ion-label>
+    <ion-toggle [(ngModel)]="ativo"></ion-toggle>
+  </ion-item>
+
+
+  <ion-item>
+      <ion-label>Habilitado</ion-label>
+      <ion-toggle color="danger"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Excluido</ion-label>
+        <ion-toggle color="secondary" checked="true"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Gratuito</ion-label>
+          <ion-toggle disabled color="dark"></ion-toggle>
+      </ion-item>
+</ion-list>
+
+</ion-content>

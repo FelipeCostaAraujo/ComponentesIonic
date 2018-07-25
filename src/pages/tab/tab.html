@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tab</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs tabs-only selectedIndex="1" tabsLayout="icon-left" color="primary">
+    <ion-tab [root]="botoesPage" tabTitle="Botoes" tabIcon="ios-tablet-portrait">
+    </ion-tab>
+
+    <ion-tab [root]="cardPage" tabTitle="Card" tabIcon="ios-tablet-portrait">
+
+    </ion-tab>
+
+    <ion-tab [root]="toastPage" tabTitle="Toast" tabIcon="ios-tablet-portrait" tabBadge="2" tabBadgeStyle="danger">
+
+    </ion-tab>
+
+  </ion-tabs>
+</ion-content>

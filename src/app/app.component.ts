@@ -1,3 +1,8 @@
+import { TabPage } from './../pages/tab/tab';
+import { SegmentPage } from './../pages/segment/segment';
+import { ToolbarPage } from './../pages/toolbar/toolbar';
+import { LoadingPage } from './../pages/loading/loading';
+import { TogglePage } from './../pages/toggle/toggle';
 import { ListaPage } from './../pages/lista/lista';
 import { IconsPage } from './../pages/icons/icons';
 import { GridPage } from './../pages/grid/grid';
@@ -19,6 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { InputPage } from '../pages/input/input';
+import { compareDates } from 'ionic-angular/umd/util/datetime-util';
+import { ToastPage } from '../pages/toast/toast';
+import { CameraPage } from '../pages/camera/camera';
+import { StoragePage } from '../pages/storage/storage';
 
 @Component({
   templateUrl: 'app.html'
@@ -50,7 +59,15 @@ export class MyApp {
       { title: 'Grid' , component:GridPage },
       { title: 'Icons' , component: IconsPage },
       { title: 'Inputs' ,component: InputPage },
-      { title: 'List' , component:ListaPage }
+      { title: 'List' , component:ListaPage },
+      { title: 'Toggle',component: TogglePage },
+      { title: 'Loading' , component:LoadingPage },
+      { title: 'Toast' , component: ToastPage },
+      { title: 'Toolbar', component: ToolbarPage },
+      { title: 'Segment', component: SegmentPage },
+      { title: 'Tabs' , component: TabPage },
+      {title: 'Camera', component: CameraPage },
+      {title: 'Storage' , component:StoragePage}
     ];
 
   }

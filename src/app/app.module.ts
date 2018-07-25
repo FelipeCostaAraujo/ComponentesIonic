@@ -1,3 +1,9 @@
+import { TabPage } from './../pages/tab/tab';
+import { SegmentPage } from './../pages/segment/segment';
+import { ToolbarPage } from './../pages/toolbar/toolbar';
+import { ToastPage } from './../pages/toast/toast';
+import { LoadingPage } from './../pages/loading/loading';
+import { TogglePage } from './../pages/toggle/toggle';
 import { ListaPage } from './../pages/lista/lista';
 import { InputPage } from './../pages/input/input';
 import { IconsPage } from './../pages/icons/icons';
@@ -23,6 +29,11 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigation';
+import { CameraPage } from '../pages/camera/camera';
+import { Camera } from '../../node_modules/@ionic-native/camera';
+import { StoragePage } from '../pages/storage/storage';
+import { IonicStorageModule } from '@ionic/storage';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +54,15 @@ import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigati
     GridPage,
     IconsPage,
     InputPage,
-    ListaPage
+    ListaPage,
+    TogglePage,
+    LoadingPage,
+    ToastPage,
+    ToolbarPage,
+    SegmentPage,
+    TabPage,
+    CameraPage,
+    StoragePage
   ],
   imports: [
     BrowserModule,
@@ -51,6 +70,7 @@ import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigati
       backButtonText: 'Voltar',
       mode: 'ios',
     }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -71,11 +91,20 @@ import { CustomNavigationPage } from '../pages/custom-navigation/custom-navigati
     GridPage,
     IconsPage,
     InputPage,
-    ListaPage
+    ListaPage,
+    TogglePage,
+    LoadingPage,
+    ToastPage,
+    ToolbarPage,
+    SegmentPage,
+    TabPage,
+    CameraPage,
+    StoragePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

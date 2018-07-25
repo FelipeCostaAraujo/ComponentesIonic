@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Toast</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<button ion-button full (click)="showToast('top')">Exibir Toast em cima</button>
+<button ion-button full (click)="showToast('middle')">Exibir Toast no Meio</button>
+<button ion-button full (click)="showToast('bottom')">Exibir Toast em baixo</button>
+<button ion-button full (click)="showToastLong()">Exibir Toast Longo</button>
+<button ion-button full (click)="showToastWithCloseButton()">Exibir Toast Com Botao de fechar</button>
+</ion-content>
