@@ -28,6 +28,7 @@ import { compareDates } from 'ionic-angular/umd/util/datetime-util';
 import { ToastPage } from '../pages/toast/toast';
 import { CameraPage } from '../pages/camera/camera';
 import { StoragePage } from '../pages/storage/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 @Component({
   templateUrl: 'app.html'
@@ -67,7 +68,8 @@ export class MyApp {
       { title: 'Segment', component: SegmentPage },
       { title: 'Tabs' , component: TabPage },
       {title: 'Camera', component: CameraPage },
-      {title: 'Storage' , component:StoragePage}
+      {title: 'Storage' , component:StoragePage},
+      {title: 'Animação' , component: AnimacaoPage}
     ];
 
   }

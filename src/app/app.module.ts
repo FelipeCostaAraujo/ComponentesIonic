@@ -33,6 +33,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { Camera } from '../../node_modules/@ionic-native/camera';
 import { StoragePage } from '../pages/storage/storage';
 import { IonicStorageModule } from '@ionic/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { IonicStorageModule } from '@ionic/storage';
     SegmentPage,
     TabPage,
     CameraPage,
-    StoragePage
+    StoragePage,
+    AnimacaoPage
   ],
   imports: [
     BrowserModule,
@@ -99,7 +101,8 @@ import { IonicStorageModule } from '@ionic/storage';
     SegmentPage,
     TabPage,
     CameraPage,
-    StoragePage
+    StoragePage,
+    AnimacaoPage
   ],
   providers: [
     StatusBar,
